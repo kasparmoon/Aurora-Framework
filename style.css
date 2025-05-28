@@ -1,0 +1,79 @@
+/*
+Theme Name: AuroraFramework
+Theme URI: https://passivewriting.com/about/
+Author: Kaspar Moon AKA Abu Saeed M Sayem
+Author URI: https://passivewriting.com/about/
+Description: A high-performance, modular, and SEO-friendly WordPress theme built on modern PHP practices.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, custom-background, custom-logo, custom-menu, featured-images, theme-options, translation-ready
+Text Domain: auroraframework
+*/
+
+/* Base responsive layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+.single-post h1.post-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.reading-time {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.post-tags {
+    margin-top: 20px;
+    color: #444;
+}
+
+.related-posts h2 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.shop-archive .shop-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.shop-banner {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,185 @@
+# Copyright (C) 2025 Kaspar Moon AKA Abu Saeed M Sayem
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: AuroraFramework 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/auroraframework\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-28T06:00:43+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: auroraframework\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "AuroraFramework"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://passivewriting.com/about/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A high-performance, modular, and SEO-friendly WordPress theme built on modern PHP practices."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Kaspar Moon AKA Abu Saeed M Sayem"
+msgstr ""
+
+#: archive-product.php:15
+msgid "Browse our curated collection of premium products."
+msgstr ""
+
+#: archive-product.php:44
+msgid "WooCommerce is not active or not installed."
+msgstr ""
+
+#: footer.php:3
+msgid "All rights reserved."
+msgstr ""
+
+#: functions.php:42
+#: inc/setup.php:22
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/customizer/blog.php:4
+msgid "Blog Page Settings"
+msgstr ""
+
+#: inc/customizer/blog.php:14
+msgid "Show Estimated Reading Time"
+msgstr ""
+
+#: inc/customizer/blog.php:25
+msgid "Show Featured Posts Section"
+msgstr ""
+
+#: inc/customizer/contractor.php:4
+msgid "Contractor Page Settings"
+msgstr ""
+
+#: inc/customizer/contractor.php:14
+msgid "Show Pricing Table Section"
+msgstr ""
+
+#: inc/customizer/ecommerce.php:4
+msgid "E-Commerce Page Settings"
+msgstr ""
+
+#: inc/customizer/ecommerce.php:14
+msgid "Show FAQ Section"
+msgstr ""
+
+#: inc/customizer/general.php:11
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer/general.php:23
+msgid "Show site tagline"
+msgstr ""
+
+#: inc/customizer/homepage.php:10
+msgid "Homepage Settings"
+msgstr ""
+
+#: inc/customizer/homepage.php:20
+msgid "Intro Text"
+msgstr ""
+
+#: inc/customizer/portfolio.php:4
+msgid "Portfolio Page Settings"
+msgstr ""
+
+#: inc/customizer/portfolio.php:14
+msgid "Show About the Writer Section"
+msgstr ""
+
+#: inc/customizer/typography.php:4
+msgid "Typography Settings"
+msgstr ""
+
+#: inc/customizer/typography.php:14
+msgid "Body Font Size (px)"
+msgstr ""
+
+#: inc/customizer/typography.php:26
+msgid "Heading Font Weight"
+msgstr ""
+
+#: inc/seo/meta-fields.php:5
+msgid "SEO Meta Settings"
+msgstr ""
+
+#: inc/seo/meta-fields.php:14
+msgid "Default Meta Title"
+msgstr ""
+
+#: inc/seo/meta-fields.php:24
+msgid "Default Meta Description"
+msgstr ""
+
+#: index.php:16
+msgid "No posts found."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blog"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Independent Contractor"
+msgstr ""
+
+#. Template Name of the theme
+msgid "E-Commerce"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Writer Portfolio"
+msgstr ""
+
+#: single-product.php:19
+msgid "WooCommerce plugin is not active."
+msgstr ""
+
+#: single.php:55
+msgid "No content found."
+msgstr ""
+
+#: template-parts/blog/post-list.php:2
+msgid "Latest Posts"
+msgstr ""
+
+#: template-parts/blog/related-posts.php:13
+msgid "Related Posts"
+msgstr ""
+
+#: template-parts/ecommerce/faq-section.php:2
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: template-parts/ecommerce/faq-section.php:3
+msgid "Q: What is your return policy?"
+msgstr ""
+
+#: template-parts/ecommerce/faq-section.php:4
+msgid "A: 30-day hassle-free return."
+msgstr ""
+
+#: template-parts/portfolio/about-writer.php:2
+msgid "About the Writer"
+msgstr ""
+
+#: template-parts/portfolio/about-writer.php:3
+msgid "Kaspar Moon is a professional blogger and novelist based in New York."
+msgstr ""
