@@ -60,6 +60,12 @@ It follows best practices in PHP, WordPress development, accessibility, and cust
 - Modular PHP logic split across purpose-built files (`setup.php`, `scripts.php`, `security.php`)
 - Theme hooks (`after_setup_theme`, `template_redirect`, etc.) used cleanly
 
+### [1.3.1] – Fix: Stylesheet Enqueue Warning
+
+#### 🐛 Bug Fixes
+- Fixed a `Warning: Array to string conversion` caused by incorrect usage of `wp_enqueue_style()` in `inc/scripts.php`.
+- Removed extra parameters and corrected the version argument to use `wp_get_theme()->get('Version')` instead of `get_stylesheet_uri()`.
+
 ---
 
 ## 🚀 Setup Instructions

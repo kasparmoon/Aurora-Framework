@@ -11,8 +11,6 @@ function aurora_enqueue_assets() {
         'aurora-style',
         get_template_directory_uri() . '/style.css',
         [],
-        get_stylesheet_uri(),
-        [],
         wp_get_theme()->get('Version'),
         'all'
     );
@@ -43,3 +41,14 @@ function aurora_dequeue_unwanted_assets() {
     wp_dequeue_style('wp-block-library'); // Gutenberg frontend styles
 }
 add_action('wp_enqueue_scripts', 'aurora_dequeue_unwanted_assets', 100);
+
+function aurora_enqueue_editor_assets() {
+    wp_enqueue_script(
+        'aurora-legal-block',
+        get_template_directory_uri() . '/assets/js/blocks/legal-revision-log.js',
+        ['wp-blocks', 'wp-element', 'wp-editor', 'wp-server-side-render'],
+        wp_get_theme()->get('Version'),
+        true
+    );
+}
+add_action('enqueue_block_editor_assets', 'aurora_enqueue_editor_assets');
