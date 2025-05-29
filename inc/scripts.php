@@ -11,6 +11,8 @@ function aurora_enqueue_assets() {
         'aurora-style',
         get_template_directory_uri() . '/style.css',
         [],
+        get_stylesheet_uri(),
+        [],
         wp_get_theme()->get('Version'),
         'all'
     );
@@ -24,6 +26,14 @@ function aurora_enqueue_assets() {
         get_template_directory_uri() . '/assets/css/editor-style.css',
         [],
         wp_get_theme()->get('Version')
+    );
+
+    wp_enqueue_script(
+        'aurora-template-toggle',
+        get_template_directory_uri() . '/assets/js/template-toggle.js',
+        [],
+        wp_get_theme()->get('Version'),
+        true
     );
 }
 add_action('wp_enqueue_scripts', 'aurora_enqueue_assets');

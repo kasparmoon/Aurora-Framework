@@ -15,3 +15,15 @@
 <?php if (get_theme_mod('show_tagline', true)) : ?>
     <p><?php bloginfo('description'); ?></p>
 <?php endif; ?>
+
+<div class="language-switcher">
+    <a href="?lang=en" aria-label="English">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/flags/en.png" alt="English" />
+    </a>
+    <a href="?lang=es" aria-label="Español">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/flags/es.png" alt="Español" />
+    </a>
+    <a href="?lang=de" aria-label="Deutsch">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/flags/de.png" alt="Deutsch" />
+    </a>
+</div>

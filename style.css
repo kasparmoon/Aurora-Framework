@@ -4,12 +4,65 @@ Theme URI: https://passivewriting.com/about/
 Author: Kaspar Moon AKA Abu Saeed M Sayem
 Author URI: https://passivewriting.com/about/
 Description: A high-performance, modular, and SEO-friendly WordPress theme built on modern PHP practices.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.3.0
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: one-column, two-columns, custom-background, custom-logo, custom-menu, featured-images, theme-options, translation-ready
 Text Domain: auroraframework
 */
+
+
+:root {
+    --primary-color: #0073aa;
+    --secondary-color: #005177;
+    --accent-color: #f7a100;
+    --text-color: #222;
+    --bg-color: #fff;
+    --heading-font: 'Segoe UI', sans-serif;
+    --body-font: system-ui, sans-serif;
+}
+
+/* Typography */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1.5rem 0 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.site-header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
 
 /* Base responsive layout */
 body {
@@ -35,6 +88,22 @@ img {
 @media (max-width: 768px) {
     .container {
         padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header,
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .site-header {
+        text-align: center;
+    }
+
+    .page-layout > .main,
+    .page-layout > .sidebar {
+        flex: 100%;
     }
 }
 
@@ -76,4 +145,95 @@ img {
     margin-bottom: 2rem;
     text-align: center;
     font-weight: bold;
+}
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.language-switcher img {
+    width: 32px;
+    height: 21px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.language-switcher img:hover {
+    transform: scale(1.1);
+    border-color: #999;
+}
+
+/* Page Layout */
+.page-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page-layout > .main {
+    flex: 3;
+}
+
+.page-layout > .sidebar {
+    flex: 1;
+}
+
+/* E-Commerce */
+body.ecommerce {
+    --primary-color: #198754;
+    --accent-color: #ffc107;
+}
+
+/* Blog */
+body.blog {
+    --primary-color: #0d6efd;
+    --accent-color: #6c757d;
+}
+
+/* Portfolio */
+body.page-template-page-portfolio {
+    --primary-color: #6f42c1;
+    --accent-color: #e83e8c;
+}
+
+/* Contractor */
+body.page-template-page-contractor {
+    --primary-color: #fd7e14;
+    --accent-color: #20c997;
+}
+
+.revision-log {
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.revision-log h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.revision-log ul {
+    list-style: none;
+    padding: 0;
+}
+
+.revision-log li {
+    margin-bottom: 0.5rem;
+}
+
+.last-updated {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #777;
+    text-align: left;
 }
